@@ -1,5 +1,3 @@
-@import url(client.min.css);
-
 $base_size:16;
 @mixin fz($px_size){
     font-size:($px_size/$base_size)+rem;
@@ -18,6 +16,13 @@ html, body {
 
 img {
     vertical-align: top;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
 
 body {
