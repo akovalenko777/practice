@@ -16,6 +16,7 @@ img {
 ul,
 li {
   list-style: none;
+  display: inline-block;
 }
 
 a {
@@ -36,10 +37,28 @@ body {
 }
 
 .clients {
+  padding: 100px 0;
+}
+.clients .clients_container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.clients_container_title {
+.clients .clients_container .clients_title {
+  width: 30%;
   text-align: center;
+  padding: 5px 0;
+  font-size: 3.125rem;
+  line-height: 35px;
+  background: linear-gradient(90deg, #00ffeb 15%, #073abb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 85px;
+}
+.clients .clients_container .clients_list {
+  display: flex;
+  justify-content: space-between;
 }
