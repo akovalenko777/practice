@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/plugins/l-slider/css/lightslider.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
+
 </head>
 <body>
     <section class="clients">
         <div class="container clients_container">
             <h2 class="clients_title">Clients</h2>
             <div class="clients_icons">
-            <ul class="clients_list">
+            <ul class="clients_list" id="lightSlider">
                 <li class="clients_list_item"><a href="#" rel="nofollow"><img src="assets/images/microsoft.png" alt="Icon Microsoft"></a></li>
                 <li class="clients_list_item"><a href="#" rel="nofollow"><img src="assets/images/samsung.png" alt="Icon Samsung"></a></li>
                 <li class="clients_list_item"><a href="#" rel="nofollow"><img src="assets/images/ibm.png" alt="Icon ibm"></a></li>
@@ -24,6 +26,37 @@
         </div>
         </div>
     </section>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/plugins/l-slider/js/lightslider.min.js"></script>
+    <script>
+        $(function() {
+            $("#lightSlider").lightSlider({
+                item:4,
+                controls:false,
+                loop: true,
+                responsive : [
+                    {
+                        breakpoint:950,
+                        settings: {
+                            item:3                            
+                        }
+                    },
+                    {
+                        breakpoint:700,
+                        settings: {
+                            item:2                            
+                        }
+                    },
+                    {
+                        breakpoint:480,
+                        settings: {
+                            item:1                            
+                        }
+                    }
+                ]
+            }); 
+        });
+    </script>  
 </body>
 </html>
