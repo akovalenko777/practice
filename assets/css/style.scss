@@ -1,3 +1,5 @@
+@import "latest_works";
+
 $base_size:16;
 @mixin fz($px_size){
     font-size:($px_size/$base_size)+rem;
@@ -27,6 +29,6 @@ body {
 
 .container {
     width: 90%;
-    max-width:1400px;
+    max-width: 1140px;
     margin: 0 auto;
 }
