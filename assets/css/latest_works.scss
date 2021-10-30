@@ -1,0 +1,26 @@
+$base_size:16;
+@mixin fz($px_size){
+    font-size:($px_size/$base_size)+rem;
+}
+.latest_works {
+    text-align: center;
+    color: #3680fe;
+    padding: 80px 133px;
+    h2 {
+        display: inline-block;
+        @include fz(50);
+        font-weight: 300;
+        background: -webkit-linear-gradient(90deg, #426FFC, #3E35FC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .title {
+        margin-bottom: 100px;
+    }
+    .wrap_top, .wrap_bot {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 52px;
+    }
+}
