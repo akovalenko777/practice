@@ -1,4 +1,3 @@
-@import 'symu_info.min.css';
 *,
 *:before,
 *:after {
@@ -25,7 +24,17 @@ body {
 }
 
 .container {
+  display: flex;
+  justify-content: center;
   width: 90%;
-  max-width: 1400px;
+  max-width: 1190px;
+  height: 635px;
   margin: 0 auto;
+}
+
+.circle {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background-color: gray;
 }
