@@ -37,3 +37,13 @@ body {
     max-width:1140px;
     margin: 0 auto;
 }
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_container {
+        &_title {
+            text-align: center;
+        }
+    }
+}

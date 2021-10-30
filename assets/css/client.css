@@ -34,3 +34,12 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients_container_title {
+  text-align: center;
+}
