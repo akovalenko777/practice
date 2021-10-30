@@ -31,4 +31,9 @@ body {
     margin: 0 auto;
 }
 
-@import "hamburger_menu.scss"
+.sidemenu {
+    @include fz(50);
+    ul {
+        list-style: none;
+    }
+}

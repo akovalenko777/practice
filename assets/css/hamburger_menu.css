@@ -25,3 +25,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.sidemenu {
+  font-size: 3.125rem;
+}
+.sidemenu ul {
+  list-style: none;
+}
