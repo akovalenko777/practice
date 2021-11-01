@@ -61,6 +61,12 @@
   border: none;
   border-radius: 24px;
   letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.rg-form__btn:hover {
+  transform: scale(1.04);
+  background-color: #3677fd;
 }
 .rg-form__sign {
   color: #5a5a5a;
@@ -76,4 +82,8 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.rg-form__link:hover {
+  transform: scale(1.1);
 }

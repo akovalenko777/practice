@@ -71,6 +71,12 @@ $base_size:16;
         border: none;
         border-radius: 24px;
         letter-spacing: 1px;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.04);
+            background-color: #3677fd;
+        }
     }
     &__sign {
         color: #5a5a5a;
@@ -88,6 +94,10 @@ $base_size:16;
         width: 40px;
         height: 40px;
         cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
