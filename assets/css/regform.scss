@@ -3,16 +3,35 @@ $base_size:16;
     font-size:($px_size/$base_size)+rem;
 }
 
+#modal-reg {
+    display: flex;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-reg-over {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // overflow: hidden;
+    background: rgba(0,0,0,.8);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    height: 100vh;
+}
+
 .regform {
+    z-index: 1000;
+    background-color: #fff;
     max-width: 812px;
-    margin: 0 auto;
-    border: 1px solid #999;
-    padding: 62px 146px 60px;
+    min-height: 500px;
+    padding: 20px 146px 20px;
     &__title {
         @include fz(50);
         color: #3677fd;
         text-align: center;
-        margin: 0 auto 54px;
+        margin: 0 auto 30px;
     }
 }
 
