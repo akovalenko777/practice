@@ -12,37 +12,46 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body>
+<body class="body">
+    <section class="hire">
+        <div class="hire__main overlay-form">
+            <div class="hire__close-btn close-btn" onclick="toggleForm()">×</div>
+            <h2 class="hire__title">Hire Me</h2>
 
-    <section class="hire overlay-form">
-        <div class="hire__wrapper">
-            <div class="hire__close-btn close-btn">&times;</div>
-            <div class="hire__me">
-                <div class="hire__container">
-                    <h2 class="hire__title">Hire Me</h2>
-                    <form class="hire__form" action="#" method="get">
-                        <div>
-                            <input class="hire__name hire__field" type="text" name="registration_name" id="name"
-                                placeholder="Your Name">
-                        </div>
-                        <div>
-                            <input class="hire__mail hire__field" type="email" name="registration" id="email_hire"
-                                placeholder="Your E-Mail">
-                        </div>
-                        <div>
-                            <textarea class="hire__message hire__field" name="Final_information" id="message" cols="30"
-                                rows="10" placeholder="Your message">Your Message
-                            </textarea>
-                        </div>
-                        <div class="hire__button">
-                            <button class="btn btn-blue" type="submit">SEND MESSAGE</button>
-                        </div>
-                    </form>
+            <form class="hire__form" action="#" method="get">
+                <div>
+                    <input class="hire__name hire__field" type="text" name="registration_name" id="name"
+                        placeholder="Your Name">
                 </div>
-            </div>
+                <div>
+                    <input class="hire__mail hire__field" type="email" name="registration" id="email_hire"
+                        placeholder="Your E-Mail">
+                </div>
+                <div class="hire__textarea">
+                    <textarea class="hire__message hire__field" name="Final_information" id="message" cols="30"
+                        rows="10" placeholder="Your message">Your Message
+                    </textarea>
+                </div>
+                <div class="hire__button">
+                    <button class="btn btn-blue" type="submit" onclick="toggleForm()">SEND MESSAGE</button>
+                </div>
+            </form>
         </div>
+
+        <div class="virtual__button">
+            <button class="btn-white" onclick="toggleForm()">Sign Up</button>
+        </div>
+
+        <div class="hire_overlay"></div>
     </section>
-    <div class="page-overlay"></div>
+
+
+
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
 
 </body>
 
