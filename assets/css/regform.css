@@ -30,10 +30,16 @@
   padding: 10px 10px 0;
 }
 .regform-top__close a {
+  display: inline-block;
   text-decoration: none;
   padding: 0 10px;
   color: #3677fd;
   font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.regform-top__close a:hover {
+  transform: scale(1.2);
 }
 
 .regform-main {

@@ -35,10 +35,16 @@ $base_size:16;
         text-align: right;
         padding: 10px 10px 0;
         a {
+            display: inline-block;
             text-decoration: none;
             padding: 0 10px;
             color: #3677fd;
             @include fz(40);
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }
