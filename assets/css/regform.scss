@@ -23,12 +23,28 @@ $base_size:16;
 }
 
 .regform {
-    z-index: 1000;
-    background-color: #fff;
     width: 812px;
     min-height: 500px;
-    padding: 48px 146px 20px;
+    background-color: #fff;
     border-radius: 10px;
+}
+
+.regform-top {
+    &__close {
+        width: 100%;
+        text-align: right;
+        padding: 10px 10px 0;
+        a {
+            text-decoration: none;
+            padding: 0 10px;
+            color: #3677fd;
+            @include fz(40);
+        }
+    }
+}
+
+.regform-main {  
+    padding: 0 146px 20px;
     &__title {
         @include fz(50);
         font-weight: 400;

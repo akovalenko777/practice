@@ -18,14 +18,28 @@
 }
 
 .regform {
-  z-index: 1000;
-  background-color: #fff;
   width: 812px;
   min-height: 500px;
-  padding: 48px 146px 20px;
+  background-color: #fff;
   border-radius: 10px;
 }
-.regform__title {
+
+.regform-top__close {
+  width: 100%;
+  text-align: right;
+  padding: 10px 10px 0;
+}
+.regform-top__close a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #3677fd;
+  font-size: 2.5rem;
+}
+
+.regform-main {
+  padding: 0 146px 20px;
+}
+.regform-main__title {
   font-size: 3.125rem;
   font-weight: 400;
   color: #3677fd;
