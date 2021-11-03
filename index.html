@@ -24,9 +24,6 @@
         <button type="button" class="btn btn-white btn-small" id="close_cookies">Accept</button>
     </div>
 
-
-    <script src="assets/js/main.js"></script>
-
     <header>
         <div class="hamburger_menu_top">
             <div class="container">
@@ -42,11 +39,7 @@
                             <li><a href="index.html#clients">Clients</a></li>
                         </ul>
                     </nav>
-    <footer class="footer">
-        <div class="footer_p"><p>Need a graphic designer? <span>Ready to work!</span> </p></div>
-      <div class="about_me_btn_wrapper"><button type="button" class="about_me_btn">Hire me</button></div> 
-  
-    </footer>
+    
 
                     <div class="sidemenu_border"></div>
                     
@@ -84,21 +77,6 @@
             </div>
         </div>
     </header>
-                
-
-
-
-
-    
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.hamburger_menu').click(function(event) {
-                $('.hamburger_menu,.menu_wrap').toggleClass('active');
-            });
-        });    
-    </script>
     
     <div class="main_top_part">
         <div class="container">
@@ -110,7 +88,7 @@
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                 </div>
-                <button type="button" class="btn_main_top_part">hire me</button>
+                <button type="button" class="btn_main_top_part" onclick="toggleForm()">hire me</button>
                 <div class="arrow_main_top_part">
                     <div class="container_arrow">
                         <div class="chevron"></div>
@@ -278,37 +256,6 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/plugins/l-slider/js/lightslider.min.js"></script>
-    <script>
-        $(function() {
-            $("#lightSlider").lightSlider({
-                item:4,
-                controls:false,
-                loop: true,
-                responsive : [
-                    {
-                        breakpoint:950,
-                        settings: {
-                            item:3                            
-                        }
-                    },
-                    {
-                        breakpoint:700,
-                        settings: {
-                            item:2                            
-                        }
-                    },
-                    {
-                        breakpoint:480,
-                        settings: {
-                            item:1                            
-                        }
-                    }
-                ]
-            }); 
-        });
-    </script>  
     <section class="hire">
         <div class="hire__main overlay-form">
             <div class="hire__close-btn close-btn" onclick="toggleForm()">×</div>
@@ -334,20 +281,8 @@
             </form>
         </div>
 
-        <div class="virtual__button">
-            <button class="btn-white" onclick="toggleForm()">Sign Up</button>
-        </div>
-
         <div class="hire_overlay"></div>
     </section>
-
-
-
-    <script>
-        function toggleForm() {
-            document.body.classList.toggle('activeForm');
-        }
-    </script>
 
     <div class="modal-reg-over" id="modal-reg">
 
@@ -420,6 +355,52 @@
            </div>
        </div>
    </div>
+
+    <footer class="footer">
+        <div class="footer_p"><p>Need a graphic designer? <span>Ready to work!</span> </p></div>
+        <div class="about_me_btn_wrapper"><button type="button" class="about_me_btn" onclick="toggleForm()">Hire me</button></div> 
+
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/plugins/l-slider/js/lightslider.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.hamburger_menu').click(function(event) {
+            $('.hamburger_menu,.menu_wrap').toggleClass('active');
+        });
+        $("#lightSlider").lightSlider({
+            item:4,
+            controls:false,
+            loop: true,
+            responsive : [
+                {
+                    breakpoint:950,
+                    settings: {
+                        item:3                            
+                    }
+                },
+                {
+                    breakpoint:700,
+                    settings: {
+                        item:2                            
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1                            
+                    }
+                }
+            ]
+        }); 
+    });  
+    function toggleForm() {
+        document.body.classList.toggle('activeForm');
+    }  
+</script>
 </body>
 
 </html>
