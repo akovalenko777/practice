@@ -1,0 +1,155 @@
+$base_size:16;
+@mixin fz($px_size){
+    font-size:($px_size/$base_size)+rem;
+}
+
+#modal-reg {
+    display: flex;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-reg-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+}
+
+.regform {
+    width: 812px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.regform-top {
+    &__close {
+        width: 100%;
+        text-align: right;
+        padding: 10px 10px 0;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0 10px;
+            color: #3677fd;
+            @include fz(40);
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.regform-main {  
+    padding: 0 146px 20px;
+    &__title {
+        @include fz(50);
+        font-weight: 400;
+        color: #3677fd;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+}
+
+.rg-form {
+    
+    &__item {
+        position: relative;
+        margin-bottom: 15px;
+        &:nth-child(3) {
+            margin-bottom: 30px;
+        }
+    }
+    &__input {
+        width: 100%;
+        height: 45px;
+        border: 1px solid #5a5a5a;
+        color: #5a5a5a;
+        border-radius: 10px;
+        padding: 16px 0 16px 21px;      
+        cursor: pointer;
+       
+        &::placeholder {
+            color: transparent;
+        }
+        &, & + .rg-form__label {
+            line-height: 1;
+            font: inherit;
+            padding: 0.9em 0.4em;
+            height: 3em;
+            position: relative;
+        }
+        & + .rg-form__label {
+            position: absolute;
+            left: 3%;
+            user-select: none;
+            color: #5a5a5a;
+            transition: transform 0.25s ease-in-out;
+            transform-origin: 0 0;
+            opacity: 0.7;
+        }
+        &:focus,
+        &:not(:placeholder-shown) {
+            padding: 8px 0 0 15px;
+            
+            & + .rg-form__label {
+                transform: translate(1%, -15%) scale(0.7);
+            }
+        }
+    }
+
+    
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: 205px;
+        height: 55px;
+        background: linear-gradient(to right, #3695ff 0%, #3677fd 100% );
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 24px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.04);
+            background-color: #3677fd;
+        }
+    }
+    &__sign {
+        color: #5a5a5a;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    &__link-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__link {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.reg-btn {
+    margin-bottom: 15px;
+}
