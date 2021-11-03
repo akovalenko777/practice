@@ -37,26 +37,6 @@ body {
 
 
 
-.about_me {
-
-    padding-top: 26px;
-    padding: 26px 100px 0 100px;
-    margin-bottom: 97px;
-    text-align: center;
-
-    &__h2 {
-        @include fz(50);
-        font-weight: normal;
-        color: #3677fd;
-        line-height: 35.12px;
-        padding-bottom: 59px;
-    }
-
-    &__p {
-        @include fz(16);
-        line-height: 35px;
-    }
-}
 
 .footer {
     background-size: 100% 100px;
