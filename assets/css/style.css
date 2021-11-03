@@ -29,6 +29,10 @@ body {
   margin: 0 auto;
 }
 
+.about_me, .footer {
+  text-align: center;
+}
+
 *, :after, :before {
   padding: 0;
   margin: 0;
@@ -57,6 +61,24 @@ body {
   min-width: 350px;
 }
 
+.about_me {
+  padding: 26px 100px 0;
+  margin-bottom: 97px;
+}
+
+.about_me__h2 {
+  font-size: 3.125rem;
+  font-weight: 400;
+  color: #3677fd;
+  line-height: 35.12px;
+  padding-bottom: 59px;
+}
+
+.about_me__p {
+  font-size: 1rem;
+  line-height: 35px;
+}
+
 .footer {
   background-size: 100% 100px;
   padding: 80px 100px 0;
@@ -65,7 +87,6 @@ body {
   line-height: 65px;
   background-color: #409aff;
   color: #fff;
-  text-align: center;
 }
 
 .footer .footer_p {
