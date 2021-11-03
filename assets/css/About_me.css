@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-@import url(main_top_part.scss);
-*, *:before, *:after {
-=======
 *,
 *:before,
 *:after {
->>>>>>> about_me
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -13,38 +8,6 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-}
-
-img {
-  vertical-align: top;
-}
-
-body {
-  background-color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  min-width: 350px;
-}
-
-.container {
-  width: 90%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.about_me, .footer {
-  text-align: center;
-}
-
-*, :after, :before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body, html {
   width: 100%;
   height: 100%;
 }
@@ -67,18 +30,18 @@ body {
 }
 
 .about_me {
-  padding: 26px 100px 0;
+  padding-top: 26px;
+  padding: 26px 100px 0 100px;
   margin-bottom: 97px;
+  text-align: center;
 }
-
 .about_me__h2 {
   font-size: 3.125rem;
-  font-weight: 400;
+  font-weight: normal;
   color: #3677fd;
   line-height: 35.12px;
   padding-bottom: 59px;
 }
-
 .about_me__p {
   font-size: 1rem;
   line-height: 35px;
@@ -92,53 +55,52 @@ body {
   line-height: 65px;
   background-color: #409aff;
   color: #fff;
+  text-align: center;
 }
-
 .footer .footer_p {
   display: inline-block;
 }
-
 .footer span {
-  font-weight: 700;
+  font-weight: bold;
 }
-
-.footer .about_me_btn_wrapper, .footer p {
+.footer p {
   display: inline-block;
 }
-
+.footer .about_me_btn_wrapper {
+  display: inline-block;
+}
 .footer .about_me_btn_wrapper .about_me_btn {
   display: inline-block;
   cursor: pointer;
   background-color: #fff;
   height: 56px;
+  line-height: 15px;
   padding: 0 70px;
   color: #3695ff;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1rem;
   line-height: 30px;
   text-transform: uppercase;
+  border: none;
   text-decoration: none;
   border-radius: 100px;
   margin-left: 45px;
-  border: 5px solid #fff;
+  border: 5px solid white;
 }
-
 .footer .about_me_btn_wrapper .about_me_btn:hover {
-  border: 5px solid #00f;
+  border: 5px solid blue;
   transform: scale(1.2);
 }
-
 .footer .about_me_btn_wrapper .about_me_btn:hover:active {
-  background: #00f;
+  background: blue;
 }
 
 @media screen and (max-width: 1005px) {
   .footer {
     padding-top: 75px;
-    font-size: 2.81pxrem;
+    font-size: 2.8125pxrem;
     line-height: 40px;
   }
-
   .footer span {
     display: block;
   }
@@ -158,7 +120,6 @@ body {
     font-size: 2.1875rem;
     padding-bottom: 30px;
   }
-
   .about_me__p {
     line-height: 25px;
   }
@@ -170,19 +131,34 @@ body {
   }
 }
 @media screen and (max-width: 544px) {
-  .about_me, .footer {
+  .about_me {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .footer {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
 @media screen and (max-width: 444px) {
-  .about_me, .footer {
+  .about_me {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .footer {
     padding-right: 30px;
     padding-left: 30px;
   }
 }
 @media screen and (max-width: 404px) {
-  .about_me, .footer {
+  .about_me {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .footer {
     padding-right: 20px;
     padding-left: 20px;
   }
