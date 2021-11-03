@@ -36,9 +36,9 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 }
-@import url(main_top_part.scss);
-@import "hamburger_menu.scss"
-@import 'About_me.min';
+@import "main_top_part";
+@import "hamburger_menu.scss";
+@import 'About_me';
 @import "expert";
 
 @import "latest_works.scss";
