@@ -1,9 +1,124 @@
-@media screen and (max-width:1200px){
-
+$base_size:16;
+@mixin fz($px_size){
+    font-size:($px_size/$base_size)+rem;
 }
 
 
+@media screen and (max-width:1200px){
+    .main_top_part {
+        .content_main_top_part {
+            .img_main_top_part {
 
-@media screen and (max-width:400px){
-    
+            }
+            .text_main_top_part {
+                h1 {
+                    @include fz(40);
+
+                }
+                p {
+                    padding-top: 25px;
+                    line-height: 25px;
+                }
+            }
+            .btn_main_top_part {
+
+            }
+            .arrow_main_top_part {
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .main_top_part {
+        .content_main_top_part {
+            .img_main_top_part {
+
+            }
+            .text_main_top_part {
+                padding-left: 7%;
+                padding-right: 7%;
+                h1 {
+                    @include fz(30);
+
+                }
+                p {
+                    padding-top: 25px;
+                    line-height: 25px;
+                    @include fz(16);
+                }
+            }
+            .btn_main_top_part {
+                
+            }
+            .arrow_main_top_part {
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .main_top_part {
+        .content_main_top_part {
+            .img_main_top_part {
+                img {
+                }
+            }
+            .text_main_top_part {
+                padding-left: 5%;
+                padding-right: 5%;
+                h1 {
+                    @include fz(25);
+
+                }
+                p {
+                    padding-top: 25px;
+                    line-height: 25px;
+                    @include fz(16);
+                }
+            }
+            .btn_main_top_part {
+                
+            }
+            .arrow_main_top_part {
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .main_top_part {
+        .content_main_top_part {
+            .img_main_top_part {
+                text-align: center;
+                img {
+                    width: 70%;
+                    
+                }
+            }
+            .text_main_top_part {
+                padding-left: 5%;
+                padding-right: 5%;
+                h1 {
+                    @include fz(20);
+
+                }
+                p {
+                    padding-top: 25px;
+                    line-height: 15px;
+                    @include fz(14);
+                }
+            }
+            .btn_main_top_part {
+                height: 40px;
+                width: 160px;
+            }
+            .arrow_main_top_part {
+
+            }
+        }
+    }
 }
