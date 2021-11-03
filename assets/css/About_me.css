@@ -29,24 +29,6 @@ body {
   min-width: 350px;
 }
 
-.about_me {
-  padding-top: 26px;
-  padding: 26px 100px 0 100px;
-  margin-bottom: 97px;
-  text-align: center;
-}
-.about_me__h2 {
-  font-size: 3.125rem;
-  font-weight: normal;
-  color: #3677fd;
-  line-height: 35.12px;
-  padding-bottom: 59px;
-}
-.about_me__p {
-  font-size: 1rem;
-  line-height: 35px;
-}
-
 .footer {
   background-size: 100% 100px;
   padding: 80px 100px 0;
