@@ -1,9 +1,6 @@
-img {
-  width: 100%;
-}
-
 .latest_works {
   text-align: center;
+  color: #3680fe;
   padding: 80px 133px;
 }
 .latest_works h2 {

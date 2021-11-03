@@ -87,3 +87,26 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.latest_works {
+  text-align: center;
+  color: #3680fe;
+  padding: 80px 133px;
+}
+.latest_works h2 {
+  display: inline-block;
+  font-size: 3.125rem;
+  font-weight: 300;
+  background: -webkit-linear-gradient(90deg, #426FFC, #3E35FC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.latest_works .title {
+  margin-bottom: 100px;
+}
+.latest_works .wrap_top, .latest_works .wrap_bot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 52px;
+}
