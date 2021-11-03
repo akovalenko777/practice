@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import url(main_top_part.scss);
 =======
 img {
@@ -65,6 +66,9 @@ img {
 }
 
 >>>>>>> LatestWorks
+=======
+@import "client.min.css";
+>>>>>>> clients
 *, *:before, *:after {
 =======
 *,
@@ -97,6 +101,7 @@ body {
   width: 90%;
   max-width: 1140px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 0 auto;
 }
 
@@ -122,6 +127,8 @@ img {
 .container {
   width: 90%;
   max-width: 1140px;
+=======
+>>>>>>> clients
   margin: 0 auto;
 }
 
